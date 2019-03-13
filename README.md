@@ -52,6 +52,14 @@ Choose `Update` action for your installed chaincode as shown.
 
 ### Configure Application
 
+* Clean up the previous connection related details.
+   ```
+   cd ~/securitization_blockchain/sc-ui
+   rm -f chaincode_info.json
+   rm -f connection_profile.json
+   rm -rf hfc-key-store
+   ```
+   
 * Re-launch your application.
 * Configure HF Client - with new version of chaincode.
 * The previous entries will be shown on Application as-is.
@@ -69,7 +77,7 @@ Choose `Update` action for your installed chaincode as shown.
 ```
 	interest_rate, _ := strconv.ParseFloat(args[2], 32)
 	interest_rate = interest_rate + 2.0
-	asset.InterestRate = strconv.FormatFloat(interest_rate, 'E', -1, 32)
+	asset.InterestRate = strconv.FormatFloat(interest_rate, 'f', -1, 32)
 ```
 
 
