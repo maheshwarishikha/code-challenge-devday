@@ -10,7 +10,7 @@ For example, while creating a new asset if you provide interest rate as 10 then 
 
 `~/securitization_blockchain/chaincode/src` has `lib.go`, `securitization.go`, `read_ledger.go` and `write_ledger.go`.
 
-**Find out**
+### Find out
 * which file you need to modify
 * which function
 * what code changes are required
@@ -20,7 +20,7 @@ For example, while creating a new asset if you provide interest rate as 10 then 
 ```
 echo $GOROOT
 /usr/local/go
-tab ->
+
 echo $GOPATH
 
 # Set GOPATH
@@ -28,16 +28,17 @@ export GOPATH=/home/student/fabric1.2
 
 # Navigate to chincode directory ~/securitization_blockchain/chaincode/src
 go build        ## It will be helpful to check for any errors in chaincode
+OR 
+go build -o <output binary name>
 
 ```
 
 ### Install Chaincode on your channel
 
-`
-IBP Dashboard -> Channels -> Choose your channel -> Switch to Chaincode -> Install Chaincode
+`IBP Dashboard -> Channels -> Choose your channel -> Switch to Chaincode -> Install Chaincode -> Choose Peer -> Install Chaincode`
 
-Install Chaincode -> Choose Peer -> Install Chaincode
-`
+
+
 Image
 
 * Provide same chaincode as before.
@@ -48,6 +49,8 @@ Image
 ### Update your chaincode
 
 Choose `Update` action for your installed chaincode.
+
+
 
 Image
 
