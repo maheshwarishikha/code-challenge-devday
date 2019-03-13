@@ -76,7 +76,7 @@ Choose `Update` action for your installed chaincode as shown.
 
 ```
 	interest_rate, _ := strconv.ParseFloat(args[2], 32)
-	interest_rate = interest_rate + 2.0
+	interest_rate = interest_rate + 0.02
 	asset.InterestRate = strconv.FormatFloat(interest_rate, 'f', -1, 32)
 ```
 
