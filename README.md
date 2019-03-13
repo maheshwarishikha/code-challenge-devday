@@ -39,14 +39,14 @@ go build -o <output binary name>
 
 ![](images/1.png)
 
-* Provide same chaincode as before.
-* Version should be different say v2.
+* Provide same Chaincode ID as before.
+* Chaincode Version should be different say v2.
 * Choose all chaincode files.
-* Submit
+* Click on `Submit`.
 
 ### Update your chaincode
 
-Choose `Update` action for your installed chaincode.
+Choose `Update` action for your installed chaincode as shown.
 
 ![](images/2.png)
 
