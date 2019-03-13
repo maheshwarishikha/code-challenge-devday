@@ -37,9 +37,7 @@ go build -o <output binary name>
 
 `IBP Dashboard -> Channels -> Choose your channel -> Switch to Chaincode -> Install Chaincode -> Choose Peer -> Install Chaincode`
 
-
-
-Image
+![](images/1.png)
 
 * Provide same chaincode as before.
 * Version should be different say v2.
@@ -50,9 +48,7 @@ Image
 
 Choose `Update` action for your installed chaincode.
 
-
-
-Image
+![](images/2.png)
 
 ### Configure Application
 
@@ -62,6 +58,13 @@ Image
 * Now create a new asset and verify your updated chaincode.
 
 ### Code changes to be made
+
+**Original Code** 
+```
+	asset.InterestRate = args[2]
+```
+
+**Updated Code**
 
 ```
 	interest_rate, _ := strconv.ParseFloat(args[2], 32)
